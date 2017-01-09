@@ -1,2 +1,9 @@
 # lasm
-learning asm
+
+```
+make
+```
+
+```
+./hw
+```
