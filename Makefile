@@ -1,6 +1,4 @@
 build: 
-	as -o hw.o hw.s
-	ld -o hw hw.o
-	gcc main.c hwc.c -o main
+	gcc -o main main.c asmFunction.s
 
 .PHONY: build

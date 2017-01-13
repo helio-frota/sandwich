@@ -1,8 +1,9 @@
-#include "hwc.h"
 #include <stdio.h>
 
+// this is to avoid a warning.
+int foo(int x);
+
 int main() {
-  int f = foo(1);
-  printf("%d", f);
-  return f;
+  printf("%d \n",foo(1));
+  return 0;
 }
