@@ -1,3 +1,6 @@
-int foo(int x) {
-  return x + 1;
+
+int foo(int x);
+
+int cfoo(int x) {
+  return foo(x);
 }
