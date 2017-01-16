@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-// this is to avoid a warning.
-int foo(int x);
+// this is to avoid a gcc warning.
+void cfoo();
 
 int main() {
-  printf("%d \n",foo(1));
+  cfoo();
   return 0;
 }

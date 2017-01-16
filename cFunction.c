@@ -1,6 +1,8 @@
+#include <stdio.h>
 
-int foo(int x);
+void foo();
 
-int cfoo(int x) {
-  return foo(x);
+void cfoo() {
+  printf("This is a C function.\n");
+  foo();
 }
