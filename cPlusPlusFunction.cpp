@@ -1,7 +1,12 @@
-#include <cstdio>
+#include <iostream>
 
-int cfoo(int x);
+using namespace std;
 
-int main() {
-  std::printf("%d \n", cfoo(1));
+extern "C" {
+  #include "cFunction.h"
+}
+
+void cPPfoo() {
+  cout << "This is a C++ function." << endl;
+  cfoo();
 }

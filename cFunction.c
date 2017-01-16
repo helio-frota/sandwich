@@ -1,6 +1,5 @@
 #include <stdio.h>
-
-void foo();
+#include "cFunction.h"
 
 void cfoo() {
   printf("This is a C function.\n");
