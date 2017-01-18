@@ -1,11 +1,13 @@
 #include <nan.h>
 
-extern "C" {
-  #include "cFunction.h"
-}
+// extern "C" {
+//   #include "cPlusPlusFunction.h"
+// }
+
+void cPPfoo();
 
 void Method(const Nan::FunctionCallbackInfo<v8::Value>&) {
-  cfoo();
+  cPPfoo();
 }
 
 void Init(v8::Local<v8::Object> exports) {

@@ -1,9 +1,11 @@
 # lasm
 
+
 ```
 make
 ```
 
 ```
-./test
+node-gyp clean configure build
 ```
+

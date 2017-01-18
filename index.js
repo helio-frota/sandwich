@@ -1,4 +1,8 @@
 const addon = require('./build/Release/jsfoo.node');
 
-console.log('Javascript with Node.js here.');
-console.log(addon.jsfoo());
+function jsFoo () {
+  console.log('This is a Javascript function.');
+  console.log(addon.jsfoo());
+}
+
+jsFoo();
