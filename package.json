@@ -1,28 +1,17 @@
 {
-  "name": "lasm",
+  "name": "sandwich",
   "version": "0.0.1",
   "main": "index.js",
   "author": "Helio Frota",
   "license": "MIT",
-  "scripts": {
-    "lint": "eslint index.js"
-  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/helio-frota/lasm.git"
+    "url": "git://github.com/helio-frota/sandwich.git"
   },
   "bugs": {
-    "url": "https://github.com/helio-frota/lasm/issues"
+    "url": "https://github.com/helio-frota/sandwich/issues"
   },
-  "homepage": "https://github.com/helio-frota/lasm",
-  "devDependencies": {
-    "eslint": "~3.8.1",
-    "eslint-config-semistandard": "~7.0.0",
-    "eslint-config-standard": "~6.2.0",
-    "eslint-plugin-promise": "~3.3.0",
-    "eslint-plugin-react": "~6.4.1",
-    "eslint-plugin-standard": "~2.0.1"
-  },
+  "homepage": "https://github.com/helio-frota/sandwich",
   "dependencies": {
     "nan": "^2.5.0"
   }

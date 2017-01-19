@@ -5,8 +5,8 @@
       "sources": [ "jsfoo.cpp" ],
       'link_settings': {
         'libraries': [
-          '/mnt/ddisk/dev/learn-asm/lasm/cPlusPlusFunction.o',
-          '/mnt/ddisk/dev/learn-asm/lasm/cFunction.o'
+          '/mnt/ddisk/dev/sandwich/cPlusPlusFunction.o',
+          '/mnt/ddisk/dev/sandwich/cFunction.o'
         ],
       },
       "include_dirs": [
