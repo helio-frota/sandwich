@@ -1,9 +1,5 @@
 #include <nan.h>
 
-// extern "C" {
-//   #include "cPlusPlusFunction.h"
-// }
-
 void cPPfoo();
 
 void Method(const Nan::FunctionCallbackInfo<v8::Value>&) {
