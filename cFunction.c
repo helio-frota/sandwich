@@ -3,5 +3,4 @@
 
 void cfoo() {
   printf("This is a C function.\n");
-  // foo();
 }
