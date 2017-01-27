@@ -5,8 +5,9 @@
       "sources": [ "jsfoo.cpp" ],
       'link_settings': {
         'libraries': [
-          '/mnt/ddisk/dev/sandwich/cPlusPlusFunction.o',
-          '/mnt/ddisk/dev/sandwich/cFunction.o'
+          '../cPlusPlusFunction.o',
+          '../cFunction.o',
+          '../asmFunction.o'
         ],
       },
       "include_dirs": [
