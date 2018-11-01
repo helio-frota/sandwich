@@ -2,11 +2,10 @@
 
 using namespace std;
 
-extern "C" {
-  #include "cFunction.h"
-}
+extern "C" void cfoo();
 
 void cPPfoo() {
   cout << "This is a C++ function." << endl;
+  cout << "now call call C function cfoo." << endl;
   cfoo();
 }
