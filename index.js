@@ -1,9 +1,8 @@
 const addon = require('bindings')('sandwich');
 
-function jsFoo () {
+function javascriptPart () {
   console.log('This is a Javascript function.');
-  addon.jsfoo();
+  addon.cppPartExportedByNapi();
 }
 
-jsFoo();
-console.log('a');
+javascriptPart();

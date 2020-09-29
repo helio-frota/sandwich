@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include "cFunction.h"
+#include "cPart.h"
 
-void cfoo() {
+void cPart() {
   printf("This is a C function.\n");
 }

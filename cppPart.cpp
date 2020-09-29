@@ -3,10 +3,10 @@
 using namespace std;
 
 extern "C" {
-  #include "cFunction.h"
+  #include "cPart.h"
 }
 
-void cPPfoo() {
+void callingCPart() {
   cout << "This is a C++ function." << endl;
-  cfoo();
+  cPart();
 }
