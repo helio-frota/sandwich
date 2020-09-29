@@ -3,7 +3,7 @@ project(sandwich VERSION 0.0.1)
 include_directories(${CMAKE_JS_INC})
 string(APPEND CMAKE_C_FLAGS "-Wall -Wextra -Wno-unused-parameter -Wendif-labels")
 
-file(GLOB SOURCE_FILES *.cpp *.h *.cc)
+file(GLOB SOURCE_FILES *.cpp *.h *.cc *.c)
 add_library(${PROJECT_NAME} SHARED ${SOURCE_FILES} ${CMAKE_JS_SRC})
 set_target_properties(${PROJECT_NAME} PROPERTIES PREFIX "" SUFFIX ".node")
 target_link_libraries(${PROJECT_NAME} ${CMAKE_JS_LIB})
