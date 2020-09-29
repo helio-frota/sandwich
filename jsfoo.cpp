@@ -1,14 +1,16 @@
-#include <nan.h>
+#include <napi.h>
 
 void cPPfoo();
 
-void Method(const Nan::FunctionCallbackInfo<v8::Value>&) {
+static Napi::String Method(const Napi::CallbackInfo& info) {
+  Napi::Env env = info.Env();
   cPPfoo();
 }
 
-void Init(v8::Local<v8::Object> exports) {
-  exports->Set(Nan::New("jsfoo").ToLocalChecked(),
-               Nan::New<v8::FunctionTemplate>(Method)->GetFunction());
+static Napi::Object Init(Napi::Env env, Napi::Object exports) {
+  exports.Set(Napi::String::New(env, "jsfoo"),
+              Napi::Function::New(env, Method));
+  return exports;
 }
 
-NODE_MODULE(jsfoo, Init)
+NODE_API_MODULE(jsfoo, Init)

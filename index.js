@@ -1,4 +1,4 @@
-const addon = require('./build/Release/jsfoo.node');
+const addon = require('bindings')('sandwich');
 
 function jsFoo () {
   console.log('This is a Javascript function.');
@@ -6,3 +6,4 @@ function jsFoo () {
 }
 
 jsFoo();
+console.log('a');

@@ -1,19 +1,18 @@
 # sandwich
 
-```
-make
-node-gyp clean configure build
-node index.js
-```
-
-### Output:
+## Required software:
 
 ```
-$ node index.js
+npm install -g cmake-js
+```
+
+### Build and run:
+
+```
+$ npm it
 This is a Javascript function.
 This is a C++ function.
-This is a C function.
-This is an Assembly function.
+node: symbol lookup error: undefined symbol: cfoo  :D
 ```
 
 More information here: https://github.com/helio-frota/sandwich/pull/1
