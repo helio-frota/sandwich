@@ -17,7 +17,7 @@
     "node-addon-api": "^3.0.2"
   },
   "scripts": {
-    "install": "cmake-js compile",
+    "build": "npx cmake-js compile",
     "test": "node index.js"
   }
 }
