@@ -5,4 +5,6 @@ function javascriptPart () {
   addon.cppPartExportedByNapi();
 }
 
-javascriptPart();
+module.exports = {
+  javascriptPart
+}
